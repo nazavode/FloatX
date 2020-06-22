@@ -175,7 +175,7 @@ public:
     }
 
     template <typename T>
-    FLOATX_ATTRIBUTES floatx(const T& other) noexcept
+    explicit FLOATX_ATTRIBUTES floatx(const T& other) noexcept
         : detail::floatx_base<floatx>(backend_float(other))
     {
         this->initialize();
